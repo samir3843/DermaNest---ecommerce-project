@@ -13,6 +13,7 @@
 </head>
 
 <body class="bg-cream font-sans text-gray-800">
+    {% include 'components/_navbar.html' %}
 
     <section class="bg-baby-pink py-20 px-6">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
@@ -118,6 +119,8 @@
 
         </div>
     </main>
+
+    {% include 'components/_footer.html' %}
 
     <script src="{% static 'js/lucide.min.js' %}"></script>
     <script>
