@@ -1,0 +1,127 @@
+<html>
+<head>
+    <title>DermaNest | Home</title>
+    {% load static %}
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+    <style>
+        /* Custom colors to match your branding */
+        .bg-baby-pink { background-color: #F4C2C2; }
+        .bg-cream { background-color: #FFFDD0; }
+        .text-baby-pink { color: #F4C2C2; }
+        .border-baby-pink { border-color: #F4C2C2; }
+    </style>
+</head>
+
+<body class="bg-cream font-sans text-gray-800">
+
+    <section class="bg-baby-pink py-20 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
+            <div class="md:w-1/2 space-y-6 text-center md:text-left">
+                <h1 class="text-5xl font-extrabold text-white leading-tight">
+                    Your Skin's <br> Natural Sanctuary.
+                </h1>
+                <p class="text-white text-lg opacity-90">
+                    Discover the ultimate B2C skincare experience. Handpicked products designed to make your skin glow with confidence.
+                </p>
+                <div class="flex gap-4 justify-center md:justify-start">
+                    <button class="bg-white text-pink-400 px-8 py-3 rounded-full font-bold shadow-lg hover:bg-gray-100 transition-all">
+                        Explore Shop
+                    </button>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="bg-white/30 p-8 rounded-full">
+                    <i data-lucide="sparkles" class="w-32 h-32 text-white opacity-80"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="max-w-6xl mx-auto p-10">
+        
+        <div class="flex items-center justify-between mb-10">
+            <div class="border-l-4 border-baby-pink pl-4">
+                <h2 class="text-3xl font-bold text-gray-700">Our Collection</h2>
+                <p class="text-gray-500">Premium skincare for every skin type</p>
+            </div>
+            <button class="text-gray-400 hover:text-baby-pink flex items-center gap-2">
+                View All <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </button>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            
+            <div class="bg-white rounded-3xl p-4 shadow-sm hover:shadow-xl transition-all duration-300 group border border-transparent hover:border-baby-pink">
+                <div class="bg-gray-50 rounded-2xl h-52 flex items-center justify-center mb-4 relative overflow-hidden">
+                    <i data-lucide="droplets" class="w-12 h-12 text-baby-pink transition-transform group-hover:scale-110"></i>
+                    <button class="absolute bottom-3 right-3 bg-white p-2 rounded-full shadow-md text-gray-400 hover:text-baby-pink">
+                        <i data-lucide="heart" class="w-5 h-5"></i>
+                    </button>
+                </div>
+                
+                <h3 class="font-bold text-gray-700 text-lg">Moisture Boost</h3>
+                <p class="text-sm text-gray-400 mb-4">Hyaluronic Acid Serum</p>
+                
+                <div class="flex items-center justify-between mt-auto">
+                    <span class="text-xl font-bold text-gray-800">$28.00</span>
+                    <button class="bg-baby-pink text-white flex items-center gap-2 px-4 py-2 rounded-xl hover:bg-red-300 transition-colors">
+                        <i data-lucide="shopping-cart" class="w-4 h-4"></i>
+                        Add
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl p-4 shadow-sm hover:shadow-xl transition-all duration-300 group border border-transparent hover:border-baby-pink">
+                <div class="bg-gray-50 rounded-2xl h-52 flex items-center justify-center mb-4 relative overflow-hidden">
+                    <i data-lucide="sun" class="w-12 h-12 text-baby-pink transition-transform group-hover:scale-110"></i>
+                </div>
+                <h3 class="font-bold text-gray-700 text-lg">Sun Guard</h3>
+                <p class="text-sm text-gray-400 mb-4">Mineral SPF 50</p>
+                <div class="flex items-center justify-between mt-auto">
+                    <span class="text-xl font-bold text-gray-800">$22.00</span>
+                    <button class="bg-baby-pink text-white flex items-center gap-2 px-4 py-2 rounded-xl hover:bg-red-300 transition-colors">
+                        <i data-lucide="shopping-cart" class="w-4 h-4"></i>
+                        Add
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl p-4 shadow-sm hover:shadow-xl transition-all duration-300 group border border-transparent hover:border-baby-pink">
+                <div class="bg-gray-50 rounded-2xl h-52 flex items-center justify-center mb-4 relative overflow-hidden">
+                    <i data-lucide="wind" class="w-12 h-12 text-baby-pink transition-transform group-hover:scale-110"></i>
+                </div>
+                <h3 class="font-bold text-gray-700 text-lg">Clear Foam</h3>
+                <p class="text-sm text-gray-400 mb-4">Daily Gentle Cleanser</p>
+                <div class="flex items-center justify-between mt-auto">
+                    <span class="text-xl font-bold text-gray-800">$19.00</span>
+                    <button class="bg-baby-pink text-white flex items-center gap-2 px-4 py-2 rounded-xl hover:bg-red-300 transition-colors">
+                        <i data-lucide="shopping-cart" class="w-4 h-4"></i>
+                        Add
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl p-4 shadow-sm hover:shadow-xl transition-all duration-300 group border border-transparent hover:border-baby-pink">
+                <div class="bg-gray-50 rounded-2xl h-52 flex items-center justify-center mb-4 relative overflow-hidden">
+                    <i data-lucide="moon" class="w-12 h-12 text-baby-pink transition-transform group-hover:scale-110"></i>
+                </div>
+                <h3 class="font-bold text-gray-700 text-lg">Night Repair</h3>
+                <p class="text-sm text-gray-400 mb-4">Bakuchiol Night Cream</p>
+                <div class="flex items-center justify-between mt-auto">
+                    <span class="text-xl font-bold text-gray-800">$45.00</span>
+                    <button class="bg-baby-pink text-white flex items-center gap-2 px-4 py-2 rounded-xl hover:bg-red-300 transition-colors">
+                        <i data-lucide="shopping-cart" class="w-4 h-4"></i>
+                        Add
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="{% static 'js/lucide.min.js' %}"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
